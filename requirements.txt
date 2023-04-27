@@ -1,0 +1,5 @@
+PyPDF2
+nltk
+re
+string
+sklearn
