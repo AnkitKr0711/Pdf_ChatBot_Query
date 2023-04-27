@@ -80,7 +80,7 @@ if pdf_file is not None:
 
     flag= True
     while(flag==True):
-        user_input=st.text_input("Enter your Query if no Query type 'bye' ",)
+        user_input=st.text_input("Enter your Query here. If no Query or exit type 'bye' and don't bother about error just write your query",)
         user_input=user_input.lower()
         
         if user_input =='bye':
