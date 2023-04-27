@@ -21,7 +21,7 @@ pdf_file = st.sidebar.file_uploader("Upload a text PDF file only",type ='pdf')
 if pdf_file is not None:
     pdfReader = PyPDF2.PdfReader(pdf_file)
     
-    st.write('Total no of Pages in pdf',len(pdfReader.pages))
+    st.write('Total no of Pages in pdf',len(pdfReader.pages), 'and please upload text pdf file only')
     text = str()
     for i in range(4,20): 
         pageObj = pdfReader.pages[i]
