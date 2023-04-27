@@ -15,7 +15,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 st.sidebar.header('PDF Reader Chatbot')
 
-pdf_file = st.sidebar.file_uploader("Upload a PDF file",type ='pdf')
+pdf_file = st.sidebar.file_uploader("Upload a text PDF file only",type ='pdf')
 
 
 if pdf_file is not None:
@@ -80,7 +80,7 @@ if pdf_file is not None:
 
     flag= True
     while(flag==True):
-        user_input=st.text_input("Enter your Query if no Query type bye",)
+        user_input=st.text_input("Enter your Query if no Query type 'bye' ",)
         user_input=user_input.lower()
         
         if user_input =='bye':
