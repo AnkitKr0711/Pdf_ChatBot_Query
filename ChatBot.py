@@ -69,14 +69,8 @@ if pdf_file is not None:
         tfidf = tfidfvec.fit_transform(sentence)
         vals = cosine_similarity(tfidf[-1],tfidf)
         idx= vals.argsort()[0][-2]
-        flat= vals.flatten()
-        flat.sort()
-        req_tfidf=flat[-2]
-        if req_tfidf==0:
-            return 'no words for that query'
-        else:
-            bot_responce =  sent_token[idx]
-            return bot_responce 
+        bot_responce =  sent_token[idx]
+        return bot_responce 
 
     flag= True
     while(flag==True):
