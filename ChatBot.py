@@ -84,7 +84,7 @@ if pdf_file is not None:
             sentence.append(user_input)
             word_token_text = word_token_text + word_token(user_input)
             final_words = list(set(word_token_text))
-            st.sidebar.write(responce(user_input))
+            st.sidebar.write("As per PDF Bot got this ",responce(user_input))
             sentence.remove(user_input)
 
 
