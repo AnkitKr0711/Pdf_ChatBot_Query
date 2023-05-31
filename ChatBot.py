@@ -23,7 +23,7 @@ if pdf_file is not None:
     
     st.write('Total no of Pages in pdf',len(pdfReader.pages), 'and please upload text pdf file only')
     text = str()
-    for i in range(4,20): 
+    for i in range(len(pdfReader.pages)): 
         pageObj = pdfReader.pages[i]
         page = pageObj.extract_text()
         page = re.sub(r'[^\x20-\x7E]', ' ', page)
