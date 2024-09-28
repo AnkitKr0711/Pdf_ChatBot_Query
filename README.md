@@ -8,6 +8,6 @@ My next step will be to enhance the model by introducing
 1) Ssing LLM Transformer and apply Transfer learning
 2) Apply concept of chat bot memeory
 
-I would like to know your opinion on how I can improve my future works. Enjoy reading! and Happy Learning!
+I would like to know your opinion on how I can improve my future works. Enjoy reading! and Happy Learning
 
 ![chatbot](https://user-images.githubusercontent.com/111516810/234799193-51da49c2-3a55-4268-9682-5c3dbe3833d1.jpg)
